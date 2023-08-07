@@ -26,6 +26,20 @@
 8.	Wait for Serial Monitor to say Camera Ok and note down the Local IP (192.168.1.XX)
 9.	Open CV2 File, replace IP address with Local IP and run program (F5).
 
+## How Each Prototype Works
+
+### Prototype 1: CV2_RED
+
+Can detect a single color with full accuracy. (Current configuration is for red). You can change it to use for different color by changing the lower and upper HSV Values in the file.
+
+### Prototype 2: CheckHSV(DomColor)
+
+Can detect more than one color. Works on the basis of dominant color detected. Hue values in the code might need updates.
+
+### Prototype 3: StoreHSV
+
+Can detect more than one color. Works on the basis of storing a specific moment as an image, then upon intialization, can check for changes. If changes detected, then tells which new color has been spotted. Bugs yet to be fixed.
+
 ## Rough Sketch of Final Prototype
 ![image](https://github.com/MysticVapour/ESP32-Cam-Module/assets/59056465/9fe3bff8-6f29-4061-9eb6-c69ec2cbf318)
 
